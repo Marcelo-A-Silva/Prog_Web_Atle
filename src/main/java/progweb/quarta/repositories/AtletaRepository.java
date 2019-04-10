@@ -10,6 +10,8 @@ import progweb.quarta.domain.Atleta;
 import progweb.quarta.domain.Competicao;
 
 
+
+
 @Repository
 public interface AtletaRepository extends JpaRepository<Atleta, Integer>{
 

@@ -8,11 +8,11 @@
 		<version>2.1.3.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>br.unisul.pweb.quarta</groupId>
-	<artifactId>Prog_Web</artifactId>
+	<groupId>progweb.quarta</groupId>
+	<artifactId>Prog_Web_Atle</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Prog_Web</name>
-	<description>Projeto_Inicial</description>
+	<name>Prog_Web_Atle</name>
+	<description>Projeto_Competicoes</description>
 
 	<properties>
 		<java.version>1.8</java.version>

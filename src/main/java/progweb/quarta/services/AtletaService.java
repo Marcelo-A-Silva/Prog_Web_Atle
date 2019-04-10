@@ -7,6 +7,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+
 import progweb.quarta.domain.Atleta;
 import progweb.quarta.domain.Competicao;
 import progweb.quarta.repositories.AtletaRepository;

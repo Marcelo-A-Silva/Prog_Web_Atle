@@ -14,7 +14,6 @@ import javax.persistence.ManyToMany;
 
 
 
-
 @Entity
 public class Atleta implements Serializable{
 	private static final long serialVersionUID = 1L;
@@ -31,8 +30,8 @@ public class Atleta implements Serializable{
 	
 	@ManyToMany
 	@JoinTable(name = "ATLETA_COMPETICAO",
-		joinColumns = @JoinColumn(name = "atleta_id"),
-		inverseJoinColumns = @JoinColumn(name= "competicao_id")
+		joinColumns = @JoinColumn(name = "atletas_id"),
+		inverseJoinColumns = @JoinColumn(name= "competicoes_id")
 	)
 	private List<Competicao> competicoes = new ArrayList<>();
 	

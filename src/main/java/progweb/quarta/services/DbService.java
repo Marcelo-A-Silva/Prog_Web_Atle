@@ -22,9 +22,6 @@ public class DbService {
 	
 	public void inicializaBancoDeDados() throws ParseException {
 		
-		
-		
-
 		Competicao com1 = new Competicao(null, "Bacon", "22/03/2019");
 		Competicao com2 = new Competicao(null, "Churros", "09/04/2019");
 		Competicao com3 = new Competicao(null, "X-slad", "10/04/2019");
@@ -51,11 +48,13 @@ public class DbService {
 		atl4.getCompeticoes().addAll(Arrays.asList(com1, com3));
 		
 		Atleta atl5 = new Atleta(null, "Jony");
+		atl5.getModalidades().add("Churros");
 		atl5.getModalidades().add("X-slad");
-		atl5.getCompeticoes().addAll(Arrays.asList(com3));
+		atl5.getCompeticoes().addAll(Arrays.asList(com2, com3));
 		
-		atletaRepository.saveAll(Arrays.asList(atl1,atl2,atl3,atl4,atl5));
 		competicaoRepository.saveAll(Arrays.asList(com1,com2,com3));
+		atletaRepository.saveAll(Arrays.asList(atl1,atl2,atl3,atl4));
+	
 	}
 	
 }
